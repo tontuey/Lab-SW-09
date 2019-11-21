@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.3.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+ <p id = "status"> Firebase SDK Loading&hellip;  </p>
+  <div>
+    <form method = "post" name = "contactForm">
+      <input type = "text" placeholder = "Name" id = "name">
+      <input type = "text" placeholder = "Email"  id = "email">
+      <input type = "text" placeholder = "Phone" id = "phone">
+      <button type = "submit" class="addContact">Add</button>
+    </form> 
+  </div>
+
+   <div>
+    <ul id = "contacts"> 
+      <!-- Contact List items will be added here --> 
+    </ul> 
+   </div> 
+   <script src = "main.js"charset="utf-8"></script> 
+      </body>
+</html>
